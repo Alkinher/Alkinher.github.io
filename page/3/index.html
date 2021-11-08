@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="Alkinh"><meta name="copyright" content="Alkinh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.jpg">
+<meta property="article:author" content="Alkinh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-11-08 20:33:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/23/%E8%83%8C%E6%99%AF/" title="背景">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="背景"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/23/%E8%83%8C%E6%99%AF/" title="背景">背景</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-23T15:26:01.000Z" title="发表于 2021-07-23 23:26:01">2021-07-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">背景(html)通过css背景属性，可以给页面元素添加背景样式
+背景颜色background-color属性定义了元素的背景颜色
+1background-color:颜色值
+
+一般情况下背景颜色默认值是transparent（透明）
+背景图片background-image属性描述了元素的背景图像。实际开发常见于logo或者一些装饰性的小图片或者是超大的背景图片，优点是非常便于控制位置（精灵图也是一种运用场景）
+1background-image: none|url;
+
+
+
+
+参数值
+作用
+
+
+
+none
+（默认）无背景图片
+
+
+url
+使用绝对或相对地址指定背景图像
+
+
+背景平铺如果需要在HTML页面上对背景图像进行平铺，可以使用background-repeat属性。
+1background-repeat:repeat | no-repeat | repeat-x | repeat-y
+
+
+
+
+值
+作用
+
+
+
+repeat
+（默认）背景图像在纵向和横向上平铺
+
+
+no-repeat
+背景图像不平铺
+
+
+repeat-x
+背景图像在横向上平铺
+
+
+repeat-y
+背景图像在纵向平铺 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/21/%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F/" title="元素显示模式">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="元素显示模式"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/21/%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F/" title="元素显示模式">元素显示模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-21T07:12:36.000Z" title="发表于 2021-07-21 15:12:36">2021-07-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">元素显示模式元素模式就是元素(标签)以什么方式进行显示，比如&lt;div&gt;自己占一行、一行可以放多个&lt;span&gt;
+HTML元素一般分为块元素和行内元素两种类型
+块元素常见的块元素有&lt;h1&gt;-&lt;h6&gt;、&lt;p&gt;、&lt;div&gt;、&lt;ul&gt;、&lt;ol&gt;、&lt;li&gt;等，其中&lt;div&gt;是最典型的块元素
+块元素的特点
+比较霸道，自己独占一行。
+高度，宽度、外边距以及内边距都可以控制
+宽度默认是容器（父级宽度）的100%
+是一个容器及盒子，里面可以放行内或者块级元素。
+
+注意
+文字类的元素内不能使用块级元素
+
+&lt;p&gt;标签主要用于存放文字，因此&lt;p&gt;里面不能放块级元素，特别是不能放&lt;div&gt;
+
+同理，&lt;h1&gt;~``等都是文字类块级标签，里面也不能放其他块级元素
+
+
+行内元素常见的行内元素有&lt;a&gt;、&lt;strong&gt;、&lt;b&gt;、&lt;em&gt;、&lt;i&gt;、&lt;del&gt;、&lt;s&gt;、&lt; ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/21/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" title="复合选择器">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="复合选择器"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/21/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" title="复合选择器">复合选择器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-21T06:20:48.000Z" title="发表于 2021-07-21 14:20:48">2021-07-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">复合选择器在CSS中，可以根据选择器的类型把选择器分为基础选择器和复合选择器，复合选择器是建立在基础选择器之上，对基本选择器进行组合形成的。
+
+复合选择器可以更准确、更高效的选择目标元素（标签）
+复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的
+常用的复合选择器包括：后代选择器、子选择器、并集选择器、伪类选择器等等
+
+后代选择器后代选择器又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。
+123ul li&#123;	color:pink&#125;
+
+
+
+子元素选择器子元素选择器（子选择器）只能选择作为某元素的最近级子元素。简单理解就是选亲儿子元素
+语法
+1元素1 &gt; 元素2&#123;样式声明&#125;
+
+案例
+1234567891011&lt;style&gt;      div&gt;a&#123;         color: pink;      &#125;   &lt;/style&gt;&lt;div&gt;      &lt;a href=& ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/20/%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7/" title="文本属性">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文本属性"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/20/%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7/" title="文本属性">文本属性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-20T15:38:20.000Z" title="发表于 2021-07-20 23:38:20">2021-07-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">文本属性
+color
+定义文本颜色
+
+
+
+
+text-align
+
+设置元素内文本的水平对齐
+
+
+
+值
+描述
+
+
+
+left
+把文本排列到左边。默认值：由浏览器决定。
+
+
+right
+把文本排列到右边。
+
+
+center
+把文本排列到中间。
+
+
+justify
+实现两端对齐文本效果。
+
+
+inherit
+规定应该从父元素继承 text-align 属性的值。
+
+
+
+
+
+
+
+text-decoration
+
+给文本添加下划线，删除线，上划线等
+
+
+
+值
+描述
+
+
+
+none
+默认。定义标准的文本。
+
+
+underline
+定义文本下的一条线。
+
+
+overline
+定义文本上的一条线。
+
+
+line-through
+定义穿过文本下的一条线。
+
+
+blink
+定义闪烁的文本。
+
+
+
+
+
+
+
+text-indent
+定义段落的首行缩进
+em:一个相对单位，就是当前元素1个文字大小，如果当前元素没有设置大小，则会按照父元素的1个文字大小
+
+
+
+
+line-height
+设置行高
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/20/%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7/" title="字体属性">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="字体属性"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/20/%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7/" title="字体属性">字体属性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-20T15:06:46.000Z" title="发表于 2021-07-20 23:06:46">2021-07-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">字体属性
+font-size
+设置字体大小
+
+
+
+
+font-weight
+
+设置字体字体粗细
+
+
+
+属性
+说明
+
+
+
+normal
+正常字体
+
+
+bold
+粗体
+
+
+border
+特粗体
+
+
+lighter
+细体
+
+
+number（可以输入数字，后面不用跟单位）
+400相当于normal，700对于bold
+
+
+开发中提倡使用数字控制粗细
+
+
+
+font-style
+
+设置字体样式
+
+
+
+值
+描述
+
+
+
+normal
+默认值。浏览器显示一个标准的字体样式。
+
+
+italic
+浏览器会显示一个斜体的字体样式。
+
+
+
+
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/18/%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/" title="表单标签">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="表单标签"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/18/%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/" title="表单标签">表单标签</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-18T15:38:04.000Z" title="发表于 2021-07-18 23:38:04">2021-07-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">表单标签使用表单是为了收集用户信息 
+
+表单的构成
+一个完整的表单通常由表单域、表单控件（也称为表单元素）和提示信息3个部分构成
+
+
+
+表单域
+表单域是一个包含表单元素的区域
+
+在html标签中，&lt;form&gt;标签用于定义表单域,以实现用户信息的收集和传递
+&lt;form&gt;会把它范围内的表单元素提交给服务器
+
+12&lt;form action=&quot;url地址&quot; method=&quot;提交方式&quot; name=&quot;表单域名称&quot;&gt;            各种表单元素控件&lt;/form&gt;
+
+
+
+
+属性
+属性值
+作用
+
+
+
+action
+url地址
+用于指定接收并处理表单数据的服务器程序的url地址
+
+
+method
+get/post
+用于设置表单数据的提交方式，其取值为get或post
+
+
+name
+名称
+用于指定表单的名称,以区分同一个页面中的多个表单域。
+
+
+
+
+
+&lt;input&gt;表单元素
+在英文单词中， input是输入的意思，而在表单元素中&lt;input&gt;标签用于收集用户信息。
+
+在 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/15/%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE/" title="列表">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="列表"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/15/%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE/" title="列表">列表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-14T16:15:34.000Z" title="发表于 2021-07-15 00:15:34">2021-07-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">列表标签表格是用来显示数据的，那么列表就是用来布局的
+列表最大的特点就是整齐、整洁、有序，它作为布局会更加自由和方便。
+
+根据使用情景不同，列表可以分为三大类：无序列表、有序列表和自定义列表。
+
+
+无序列表
+&lt;ul&gt;标签表示HTML页面中项目的无序列表，一般会以项目符号呈现列表项，而列表项使用&lt;li&gt;标签定义。
+
+无序列表各个列表项之间是没有顺序级别之分，是并列的。
+&lt;ul&gt;&lt;/ul&gt;中只能嵌套&lt;li&gt;&lt;/li&gt;，直在&lt;ul&gt;&lt;/ul&gt;标签中输入其他标签或者文字的做法是不被允许的
+&lt;li&gt;与&lt;/li&gt;之间相当于一个容器，可以容纳所有元素
+无序列表会带有自己的样式属性，但在实际使用时，我们会使用CSS来设置
+
+123&lt;ul&gt;    &lt;li&gt;&lt;/li&gt;&lt;/ul&gt;
+有序列表
+有序列表即为有顺序排列的列表，其各个列表会按照一定的顺序排列定义。
+在HTML标签中，&lt;ol&gt;标签用于定义有序列表，列表排序以数字来显示，并且 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/14/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE/" title="表格">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="表格"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/14/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE/" title="表格">表格</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-14T15:49:56.000Z" title="发表于 2021-07-14 23:49:56">2021-07-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">表格标签表格主要用于显示、展示数据，因为它可以让数据展示的非常的规整，可读性非常好。特别是后台展示数据的时候，熟练运用表格就非常重要。
+
+表格的基本语法
+12345&lt;table&gt;	&lt;tr&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;&lt;/table&gt;
+
+
+&lt;table&gt;标签用于定义表格的标签
+&lt;tr&gt;标签：单元行
+&lt;td&gt;标签：单元格
+
+
+表头单元格标签
+一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容加粗居中显示。
+123&lt;table&gt;	&lt;th&gt;&lt;/th&gt;&lt;/table&gt;
+
+
+表格属性
+12345&lt;table border=&quot;1px&quot;&gt;	&lt;tr&gt;		&lt;td&gt;&lt;/td&gt;	&lt;/tr&gt;&lt;/table&gt;
+
+
+
+
+属性名
+属性值
+描述
+
+
+
+align
+left、center、right
+规定表格相对元素的对其方式（现版本已弃用，用margin来 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/11/%E9%94%9A%E7%82%B9%E6%A0%87%E7%AD%BE/" title="锚点标签">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="锚点标签"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/11/%E9%94%9A%E7%82%B9%E6%A0%87%E7%AD%BE/" title="锚点标签">锚点标签</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-11T14:43:25.000Z" title="发表于 2021-07-11 22:43:25">2021-07-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">锚点标签
+锚点链接：当我们点击链接，可以快速定位到页面中的某个属性。
+在链接文本的href属性中，设置属性值为***#名字***的形式 ，如&lt;a href=&quot;#two&quot;&gt;第二集&lt;/a&gt;
+找到目标位置标签，里面添加一个id属性=刚才的名字，如：&lt;h3 id=&quot;two&quot;&gt;第二季介绍&lt;/h3&gt;
+
+
+
+12345案例&lt;div class=&quot;box&quot;&gt;  &lt;a href=&quot;#two&quot;&gt;第二集&lt;/a&gt;    &lt;h3 id=&quot;two&quot;&gt;第二集介绍&lt;/h3&gt;     &lt;/div&gt;
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/11/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/" title="相对路径">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="相对路径"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/11/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/" title="相对路径">相对路径</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-11T14:32:44.000Z" title="发表于 2021-07-11 22:32:44">2021-07-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span></div><div class="content">相对路径相对路径：以引用文件所在位置为参考基础，而建立的目录路径
+这里简单来说，图片相对于HTML页面的位置
+
+
+
+相对路径分类
+符号
+说明
+
+
+
+同一级路径
+
+图像文件位于HTML文件同一级如&lt;img src=&quot;baidu.gif&quot;/&gt;
+
+
+下一级路径
+/
+图像文件位于HTML文件下一级如&lt;img src=&quot;images/baidu.gif&quot;/&gt;
+
+
+上一级路径
+../
+图像文件位于HTML文件上一级如&lt;img src=&quot;../images/baidu.gif&quot;/&gt;
+
+
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Alkinh</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/11/08/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/11/08/hello-world/" title="Hello World">Hello World</a><time datetime="2021-11-08T12:30:19.079Z" title="发表于 2021-11-08 20:30:19">2021-11-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/20/CSS%E5%88%9D%E5%A7%8B%E5%8C%96/" title="CSS初始化"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS初始化"/></a><div class="content"><a class="title" href="/2021/09/20/CSS%E5%88%9D%E5%A7%8B%E5%8C%96/" title="CSS初始化">CSS初始化</a><time datetime="2021-09-20T03:54:43.000Z" title="发表于 2021-09-20 11:54:43">2021-09-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/20/%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/" title="常用布局技巧"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用布局技巧"/></a><div class="content"><a class="title" href="/2021/09/20/%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/" title="常用布局技巧">常用布局技巧</a><time datetime="2021-09-20T03:53:59.000Z" title="发表于 2021-09-20 11:53:59">2021-09-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/20/%E4%BA%AC%E4%B8%9C%E6%8A%98%E6%89%A3%E6%A1%86%E6%A1%88%E4%BE%8B/" title="京东折扣框案例"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="京东折扣框案例"/></a><div class="content"><a class="title" href="/2021/09/20/%E4%BA%AC%E4%B8%9C%E6%8A%98%E6%89%A3%E6%A1%86%E6%A1%88%E4%BE%8B/" title="京东折扣框案例">京东折扣框案例</a><time datetime="2021-09-20T03:52:39.000Z" title="发表于 2021-09-20 11:52:39">2021-09-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/20/vertical-align%E5%B1%9E%E6%80%A7%E5%BA%94%E7%94%A8/" title="vertical-align属性应用"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vertical-align属性应用"/></a><div class="content"><a class="title" href="/2021/09/20/vertical-align%E5%B1%9E%E6%80%A7%E5%BA%94%E7%94%A8/" title="vertical-align属性应用">vertical-align属性应用</a><time datetime="2021-09-20T03:51:38.000Z" title="发表于 2021-09-20 11:51:38">2021-09-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaScript/"><span class="card-category-list-name">JavaScript</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/html/"><span class="card-category-list-name">html</span><span class="card-category-list-count">25</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/html%E6%A1%88%E4%BE%8B/"><span class="card-category-list-name">html案例</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/JS-js%E7%9A%84%E4%B9%A6%E5%86%99%E4%BD%8D%E7%BD%AE/" style="font-size: 1.1em; color: #999">(JS)js的书写位置</a> <a href="/tags/JS-js%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AF%AD%E5%8F%A5/" style="font-size: 1.1em; color: #999">(JS)js输入输出语句</a> <a href="/tags/JS-%E5%8F%98%E9%87%8F/" style="font-size: 1.1em; color: #999">(JS)变量</a> <a href="/tags/JS-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 1.1em; color: #999">(JS)数据类型</a> <a href="/tags/JS-%E8%BF%90%E7%AE%97%E7%AC%A6/" style="font-size: 1.1em; color: #999">(JS)运算符</a> <a href="/tags/html-CSS%E4%B8%89%E8%A7%92/" style="font-size: 1.5em; color: #99a9bf">(html)CSS三角</a> <a href="/tags/html-CSS%E5%88%9D%E5%A7%8B%E5%8C%96/" style="font-size: 1.1em; color: #999">(html)CSS初始化</a> <a href="/tags/html-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E6%A0%B7%E5%BC%8F/" style="font-size: 1.1em; color: #999">(html)CSS用户界面样式</a> <a href="/tags/html-css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" style="font-size: 1.1em; color: #999">(html)css的三大特性</a> <a href="/tags/html-vertical-align%E5%B1%9E%E6%80%A7%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">(html)vertical-align属性应用</a> <a href="/tags/html-%E5%85%83%E7%B4%A0%E7%9A%84%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F/" style="font-size: 1.1em; color: #999">(html)元素的显示与隐藏</a> <a href="/tags/html-%E5%9C%86%E8%A7%92%E8%BE%B9%E6%A1%86/" style="font-size: 1.1em; color: #999">(html)圆角边框</a> <a href="/tags/html-%E5%AE%9A%E4%BD%8D/" style="font-size: 1.1em; color: #999">(html)定位</a> <a href="/tags/html-%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/" style="font-size: 1.1em; color: #999">(html)常用布局技巧</a> <a href="/tags/html-%E6%B5%AE%E5%8A%A8/" style="font-size: 1.1em; color: #999">(html)浮动</a> <a href="/tags/html-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" style="font-size: 1.1em; color: #999">(html)盒子模型</a> <a href="/tags/html-%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1/" style="font-size: 1.1em; color: #999">(html)盒子阴影</a> <a href="/tags/html-%E7%B2%BE%E7%81%B5%E5%9B%BE/" style="font-size: 1.1em; color: #999">(html)精灵图</a> <a href="/tags/%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F-html/" style="font-size: 1.1em; color: #999">元素显示模式(html)</a> <a href="/tags/%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">列表标签(html)</a> <a href="/tags/%E5%9B%BE%E5%83%8F%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">图像标签(html)</a> <a href="/tags/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8-html/" style="font-size: 1.1em; color: #999">复合选择器(html)</a> <a href="/tags/%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7-html/" style="font-size: 1.1em; color: #999">字体属性(html)</a> <a href="/tags/%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7-html/" style="font-size: 1.1em; color: #999">文本属性(html)</a> <a href="/tags/%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">文本标签(html)</a> <a href="/tags/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84-html/" style="font-size: 1.1em; color: #999">相对路径(html)</a> <a href="/tags/%E8%83%8C%E6%99%AF-html/" style="font-size: 1.1em; color: #999">背景(html)</a> <a href="/tags/%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">表单标签(html)</a> <a href="/tags/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">表格标签(html)</a> <a href="/tags/%E9%94%9A%E7%82%B9%E6%A0%87%E7%AD%BE-html/" style="font-size: 1.1em; color: #999">锚点标签(html)</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">十一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">12</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">32</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-07-09T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-11-08T12:33:10.134Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Alkinh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
